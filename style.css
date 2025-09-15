@@ -1,0 +1,71 @@
+/* Basic page padding */
+body{
+    padding: 10px;
+}
+
+/* Center headings */
+h2{
+    text-align: center;
+}
+
+/* Button with transition on hover */
+.btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s ease, transform 0.5s ease-in-out;
+}
+
+.btn:hover{
+    background-color: red;
+    transform: scale(1.2);
+}
+
+
+/* Image size and display */
+.image{
+    width: 300px;
+    height: 200px;
+    display: block;
+}
+
+/* Spin animation for image on hover */
+img:hover{
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Note paragraph transitions on hover */
+#note{
+    text-align: center;
+    transition: color 0.5s ease, transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
+}
+
+#note:hover{
+    color: green;
+    transform: scale(1.1);
+    font-size: 1.2em;
+}
+/* Boxer div for animation */
+.boxer{
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Animation class for moving boxer */
+.animate{
+    animation: moveBoxer 4s infinite alternate ease-in-out;
+}
+
+@keyframes moveBoxer{
+    from {left: 0;}
+    to {left: 800px;}
+}
